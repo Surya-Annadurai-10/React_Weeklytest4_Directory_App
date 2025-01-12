@@ -2,13 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './Header/Header'
+import NavSection from './NavSection/NavSection'
+import MainSection from './MainSection/MainSection'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
    <>
-    <h1>Directory aPP</h1>
+   
+   <Header />
+   <NavSection />
+   <MainSection />
    </>
   )
 }
