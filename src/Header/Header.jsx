@@ -3,9 +3,9 @@ import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <heaader className={styles.header}>
+    <header className={styles.header}>
         <h1>Surya Annadurai's Directory App</h1>
-    </heaader>
+    </header>
   )
 }
 
