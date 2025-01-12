@@ -18,11 +18,13 @@ const Retrieve = () => {
  }
 
  useEffect(() =>{
-     let userDetails = JSON.parse(localStorage.getItem("userDetails"));
-     let filter = userDetails.filter((ele) => ele.aadhar == inputVal);
-     setFiltered([
-        ...filter
-     ])
+    if(localStorage.getItem("userDetails") != null){
+        let userDetails = JSON.parse(localStorage.getItem("userDetails"));
+        let filter = userDetails.filter((ele) => ele.aadhar == inputVal);
+        setFiltered([
+           ...filter
+        ])
+    }
  },[inputVal])
 
 
